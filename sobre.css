@@ -23,15 +23,38 @@ body{
   margin-top: 30px;
 }
 
-.backgroundColorImage{
+.distribution-image{
+  background-color: #F2EDED;
+  border: 1px solid black;
+  padding: 15px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.family-image{
   background-color: #F2EDED;
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 15px;
-  margin: 30px;
+  margin: 0 0 10px 10px;
+  float: right;
 }
 
 .image-legend{
   font-style: italic;
   margin-top: 10px;
+  text-align: center;
+}
+
+.footer-style{
+  color: #777;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+
+
+.footer-style img{
+  margin-right: 30px;
+  vertical-align: middle;
+  width: 94px;
 }
