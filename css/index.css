@@ -3,22 +3,36 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
+.container{
+
+  width: 940px;
+  margin: 0 auto;
+}
+
 .bag{
   background-image: url(../img/sacola.png);
   background-repeat: no-repeat;
-  background-position:top right;
+  background-position: top right ;
 
   width: 140px;
   font-size: 14px;
-  padding-right: 35px;
+  padding:8px 35px 0 0;
   text-align: right;
+  margin-top: 10px;
 }
 
 .menu-home ul{
   font-size: 15px;
+  margin-top: 10px;
+  
+}
 
+.menu-home ul li{
+  display: inline;
+  margin-left: 20px; 
 }
 
 .menu-home a{
   color: #003366;
 }
+
