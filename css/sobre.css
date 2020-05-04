@@ -3,19 +3,49 @@ body{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   width: 940px;
   margin: 0 auto;
+}
+
+header{
+  position: relative;
+  margin-bottom: 30px;
+}
   
+.bag{
+  background-image: url(../img/sacola.png);
+  background-repeat: no-repeat;
+  background-position: top right ;
+  width: 140px;
+  font-size: 14px;
+  padding:8px 35px 0 0;
+  text-align: right;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-home ul{
+  font-size: 15px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.menu-home ul li{
+  display: inline;
+  margin-left: 20px; 
+}
+
+.menu-home a{
+  color: #003366;
 }
 
 .paragraph{
   line-height: 1.4;
   padding: 0 45px;
   text-indent: 15px;
-}
-
-.main-title{
-  background-image: url(./img/sobre-background.jpg);
-  padding: 10px; 
-  color: black;
 }
 
 .subtitle{
@@ -51,7 +81,6 @@ body{
   padding: 30px 0;
   margin: 30px 0;
 }
-
 
 .footer-style img{
   margin-right: 30px;
