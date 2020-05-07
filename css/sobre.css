@@ -46,11 +46,14 @@ header{
   line-height: 1.4;
   padding: 0 45px;
   text-indent: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .subtitle{
   border-bottom: 3px black solid;
   margin-top: 30px;
+  font-size: 30px;
 }
 
 .distribution-image{
@@ -58,7 +61,7 @@ header{
   border: 1px solid black;
   padding: 15px;
   width: 550px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .family-image{
@@ -66,7 +69,7 @@ header{
   text-align: center;
   border: 1px solid black;
   padding: 15px;
-  margin: 0 0 10px 10px;
+  margin: 20px 0 10px 10px;
   float: right;
 }
 
@@ -74,6 +77,15 @@ header{
   font-style: italic;
   margin-top: 10px;
   text-align: center;
+}
+
+.differentials-list{
+  margin-top: 10px;
+  list-style: disc;
+}
+
+.differentials-list li{
+  margin-left: 25px;
 }
 
 .footer-style{
