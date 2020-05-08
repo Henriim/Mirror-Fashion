@@ -1,7 +1,7 @@
 body {
   color: #333333;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  }
+  font-family: 'Roboto', sans-serif;
+}
 
 header{
   position: relative;
@@ -71,11 +71,35 @@ header{
   clear: both;
   margin-top: 10px;
   padding-bottom: 10px;
+  
+}
+
+.menu-departments li a::before{
+  content: '- ';
 }
 
 .menu-departments li:hover {
   color: #ff5964;
 }
+
+.menu-departments li ul{
+  display: none;
+}
+
+.menu-departments li:hover ul{
+  display: block;
+  color: #333333;
+}
+
+.menu-departments ul ul li{
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.menu-departments  li li a:before {
+  content: '\272A';
+  padding-right: 3px;
+  }
 
 .search h2, .search form, .menu-departments h2{
   margin: 10px;
@@ -126,11 +150,19 @@ header{
   border-radius: 15px;
 }
 
+.banner-bigCity:hover{
+  color: #ff5964;
+  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 8px 2px 5px 0px #ff5964;
+}
+
 .panel{
   margin: 10px 0;
   padding: 10px;
   width: 445px;
 }
+
 
 .panel h2{
   font-size: 24px;
@@ -155,6 +187,11 @@ header{
   text-decoration: none;
 }
 
+.panel ol li figure figcaption:before{
+  content: '\2756';
+  opacity: 0.4;
+}
+
 .news-section{
   margin: 50px 0;
   float: left;
@@ -165,8 +202,11 @@ header{
   box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
-.news-section:hover h2{
+.news-section:hover {
   color: #ff5964;
+  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -8px 2px 5px 0px #ff5964;
 }
 
 .best-sellers{
@@ -179,8 +219,11 @@ header{
   box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
-.best-sellers:hover h2{
+.best-sellers:hover{
   color: #ff5964;
+  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 8px 2px 5px 0px #ff5964;
 }
 
 footer{
