@@ -42,7 +42,15 @@ header{
 }
 
 .menu-home a{
+  color: #333333;
+}
+
+.menu-home a:visited{
   color: #003366;
+}
+
+.menu-home a:active{
+  color: #ff5964
 }
 
 .featured{
@@ -63,6 +71,10 @@ header{
   clear: both;
   margin-top: 10px;
   padding-bottom: 10px;
+}
+
+.menu-departments li:hover {
+  color: #ff5964;
 }
 
 .search h2, .search form, .menu-departments h2{
@@ -92,6 +104,10 @@ header{
 
 .search form a{
   color: inherit;
+}
+
+.search h2:hover + form input , .search input:focus{
+  border: 2px solid #ff5964 ;
 }
 
 .menu-departments li{
@@ -140,21 +156,31 @@ header{
 }
 
 .news-section{
+  margin: 50px 0;
   float: left;
-  background-color: #F08080;
+  background-color: #c6c5b9;
   border-radius: 15px;
   -webkit-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
+.news-section:hover h2{
+  color: #ff5964;
+}
+
 .best-sellers{
+  margin: 50px 0;
   float: right;
-  background-color: #90EE90;
+  background-color: #c6c5b9;
   border-radius: 15px;
   -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.best-sellers:hover h2{
+  color: #ff5964;
 }
 
 footer{
@@ -171,6 +197,11 @@ footer .container {
   position: absolute;
   right: 0;
   top: 12px;
+
+  /* texto na lista */
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .social li{
