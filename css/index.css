@@ -75,7 +75,8 @@ header{
 }
 
 .menu-departments li a::before{
-  content: '- ';
+  content: '\272A';
+  margin-right: 2px;
 }
 
 .menu-departments li:hover {
@@ -84,11 +85,13 @@ header{
 
 .menu-departments li ul{
   display: none;
+  
 }
 
 .menu-departments li:hover ul{
   display: block;
   color: #333333;
+  
 }
 
 .menu-departments ul ul li{
@@ -97,9 +100,8 @@ header{
 }
 
 .menu-departments  li li a:before {
-  content: '\272A';
-  padding-right: 3px;
-  }
+  content: '- ';
+}
 
 .search h2, .search form, .menu-departments h2{
   margin: 10px;
@@ -116,6 +118,7 @@ header{
   background-image: url(../img/busca.png);
   background-repeat: no-repeat;
   border: none;
+  background-color: inherit;
 
   /* tamanho da imagem */
   width: 20px;
@@ -150,13 +153,6 @@ header{
   border-radius: 15px;
 }
 
-.banner-bigCity:hover{
-  color: #ff5964;
-  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 8px 2px 5px 0px #ff5964;
-}
-
 .panel{
   margin: 10px 0;
   padding: 10px;
@@ -178,7 +174,22 @@ header{
   width: 140px;
   margin: 2px;
   padding-bottom: 10px;
+  transition: 0.7s ease-out;
 }
+
+.panel li:hover {
+  box-shadow: 0 0 5px #333;
+  background-color: rgba(255,255,255,0.8);
+  transform: scale(1.2) rotate(-5deg);
+  transition: box-shadow 0.7s,
+              background-color 0.7s,
+              transform 1s ease-in;
+}
+
+.panel li:nth-child(2n):hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
 
 .panel a{
   color: #333;
@@ -187,7 +198,7 @@ header{
   text-decoration: none;
 }
 
-.panel ol li figure figcaption:before{
+.panel figcaption:before{
   content: '\2756';
   opacity: 0.4;
 }
@@ -195,38 +206,35 @@ header{
 .news-section{
   margin: 50px 0;
   float: left;
-  background-color: #c6c5b9;
   border-radius: 15px;
-  -webkit-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 2px 5px 0px rgba(0,0,0,0.75);
   background: linear-gradient(#F5DCDC, #BEBEF4);
+  transition: box-shadow 1s, 
+              color 1s;
 }
 
 .news-section:hover {
   color: #ff5964;
-  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -8px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: -8px 2px 5px 0px #ff5964;
+  box-shadow: -4px 2px 5px 0px #ff5964;
 }
 
 .best-sellers{
   margin: 50px 0;
   float: right;
-  background-color: #c6c5b9;
   border-radius: 15px;
-  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.75);
   background: linear-gradient(#DCDCF5, #F4BEBE);
-  
+  transition: box-shadow 1s, 
+              color 1s ;
 }
 
 .best-sellers:hover{
   color: #ff5964;
-  -webkit-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 8px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 8px 2px 5px 0px #ff5964;
+  box-shadow: 4px 2px 5px 0px #ff5964;
 }
 
 footer{
