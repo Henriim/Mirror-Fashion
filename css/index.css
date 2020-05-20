@@ -149,7 +149,7 @@ header{
   text-decoration: none;
 }
 
-.banner-bigCity{
+.banner-featured img{
   border-radius: 15px;
 }
 
@@ -171,7 +171,7 @@ header{
 .panel li{
   display: inline-block;
   vertical-align: top;
-  width: 140px;
+  width: 31%;
   margin: 2px;
   padding-bottom: 10px;
   transition: 0.7s ease-out;
@@ -251,11 +251,6 @@ footer .container {
   position: absolute;
   right: 0;
   top: 12px;
-
-  /* texto na lista */
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .social li{
@@ -280,5 +275,102 @@ footer .container {
 
 .social a[href*="plus.google.com"]{
   background-image: url(../img/googleplus.png);
+}
+
+@media (max-width: 939px){
+  .container{
+    width: 96%;
+  }
+
+  header h1{
+    text-align: center;
+  }
+
+  header h1 img {
+    max-width: 50%;
+  }
+  .bag{
+    display: none;
+  }
+  .menu-home ul{
+    position: static;
+    text-align: center;
+  }
+  .menu-home ul li{
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .search,
+  .menu-departments,
+  .banner-featured img{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .panel{
+    width: auto;
+  }
+
+  .panel li{
+    width: 30%;
+  }
+  
+  .panel img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px){
+  header h1{
+    margin: 5px 0;
+  }
+  .menu-departments{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-departments nav > ul{
+    column-count: 2;
+  }
+}
+
+@media (min-width: 720px) {
+  header h1{
+    text-align: left;
+  }
+
+  .menu-home ul{
+    position: absolute;
+  }
+
+  .bag{
+    display: block;
+  }
+
+  
+  .panel li{
+    width: 15%;
+  }
+
+  .search,
+  .menu-departments{
+    margin-right: 1%;
+    width: 30%;
+  }
+
+  .menu-departments nav > ul {
+    column-count: 1;
+  }
+
+  .banner-featured img{
+    width: 69%;
+  }
+
+}
+
+@media (min-width: 940px){
+  .panel li{
+    width: 31%;
+  }
 }
 
