@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/generic/reset.css">
+  <link rel="stylesheet" href="css/elements/base.css">
+  <link rel="stylesheet" href="css/components/shopping-bag.css">
+  <link rel="stylesheet" href="css/containers/main-header.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Produtos - Mirror Fashion</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <img class="logo" src="./img/logo.png" alt="Logo da Mirror Fashion">
+    <p class="shopping-bag">Nenhum item na sacola de compras</p>
+
+    <nav class="menu">
+      <a class="action" href=""><i class="fas fa-user-circle"></i> Sua conta</a>
+      <a class="action" href=""><i class="far fa-list-alt"></i> Lista de Desejos</a>
+      <a class="action" href=""><i class="far fa-address-card"></i> Cartão Fidelidade</a>
+      <a class="action" href="sobre.html"><i class="fas fa-warehouse"></i> Sobre</a>
+      <a class="action" href=""><i class="fas fa-info-circle"></i> Ajuda</a>
+    </nav>
+  </header>
+
+  <section class="product">
+    <h2 class="product-title">Título de um produto </h2>
+    <p class="price">por apenas R$20,90</p>
+
+    <form action="">
+      <fieldset>
+        <legend>Escolha uma cor:</legend>
+
+        <input id="green" type="radio" name="color" checked>
+        <label for="green">
+          <img src="/img/produtos/foto1-verde.png" alt="Foto produto verde">
+        </label>
+
+        <input id="pink" type="radio" name="color">
+        <label for="pink">
+          <img src="/img/produtos/foto1-rosa.png" alt="Foto produto rosa">
+        </label>
+
+        <input id="blue" type="radio" name="color">
+        <label for="blue">
+          <img src="/img/produtos/foto1-azul.png" alt="Foto produto azul">  
+        </label>
+      </fieldset>
+      <button class="buy">Comprar</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <img src="./img/logo-rodape.png" alt="Logo da Mirror Fashion">
+      <ul class="social">
+        <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+        <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+        <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

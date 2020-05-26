@@ -1,0 +1,16 @@
+.main-header{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-header > .logo{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.main-header .action{
+  display: inline-block;
+  margin: 0 10px 10px;
+}
