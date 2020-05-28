@@ -1,0 +1,56 @@
+.product-mirror{
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px 10px;
+}
+
+.product-mirror > .price {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.product-mirror .legend{
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.product-mirror .buy{
+  border: none;
+  background-color: #91BD3C;
+  color: #333;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px #777;
+  display: block;
+  padding: 0.5em 1em;
+  margin:1em 0;
+}
+
+@media (min-width: 630px) {
+  .product-mirror{
+    position: relative;
+    padding-left: 40%;
+    font-size: 1.2em;
+  }
+  .colors{
+    position: static;
+    padding: 0;
+  }
+  .colors legend{
+    position: static;
+  }
+
+  .colors label img{
+    max-width: 35%;
+    max-height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .colors label::after{
+    position: static;
+    float: left;
+    margin-right: 10px;
+  }
+}

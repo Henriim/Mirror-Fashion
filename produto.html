@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tools/container.css">
   <link rel="stylesheet" href="css/generic/reset.css">
   <link rel="stylesheet" href="css/elements/base.css">
   <link rel="stylesheet" href="css/components/shopping-bag.css">
   <link rel="stylesheet" href="css/containers/main-header.css">
+  <link rel="stylesheet" href="css/containers/product-mirror.css">
+  <link rel="stylesheet" href="css/components/product-title.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Produtos - Mirror Fashion</title>
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <img class="logo" src="./img/logo.png" alt="Logo da Mirror Fashion">
     <p class="shopping-bag">Nenhum item na sacola de compras</p>
 
@@ -26,13 +29,13 @@
     </nav>
   </header>
 
-  <section class="product">
-    <h2 class="product-title">Título de um produto </h2>
+  <section class="product-mirror container">
+    <h2 class="product-title">Camiseta Ecko Caveira Bad to The Bone</h2>
     <p class="price">por apenas R$20,90</p>
 
     <form action="">
-      <fieldset>
-        <legend>Escolha uma cor:</legend>
+      <fieldset class="colors">
+        <legend class="legend">Escolha uma cor:</legend>
 
         <input id="green" type="radio" name="color" checked>
         <label for="green">
