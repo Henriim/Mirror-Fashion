@@ -1,0 +1,22 @@
+.button-buy{
+  border: none;
+  background-color: #91BD3C;
+  color: #333;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px #777;
+  padding: 0.5em 1em;
+  margin:1em 0;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: box-shadow 0.3s linear, transform linear 0.2s;
+}
+
+.button-buy:hover{
+  box-shadow: none;
+}
+
+.button-buy:active{
+  transform: translateY(3px) scale(0.96);
+}

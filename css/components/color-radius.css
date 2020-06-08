@@ -1,0 +1,68 @@
+.colors{
+  position: relative;
+  padding-top: 100px;
+}
+
+.colors > .color-radius::before{
+  content: '';
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  position: absolute;
+  top:10px;
+  cursor: pointer;
+}
+
+.colors > .color-radius[for="green"]::before{
+  background-color: #33cc66;
+}
+
+.colors > .color-radius[for="pink"]::before{
+  background-color: #f3305c;
+  left: 90px;
+}
+
+.colors > .color-radius[for="purple"]::before{
+  background-color: #685eb4;
+  left: 180px;
+}
+
+.colors > .input-none{
+  display: none;
+}
+
+.colors > .color-radius:hover::before{
+  border: 6px solid rgba(0,0,0,0.3);
+  transition: border 0.2s;
+}
+
+.colors > .input-none:checked + .color-radius::before{
+  border: 6px solid rgba(0, 0, 0, 0.6);
+  display: block;
+  transition: border 0.5s;
+}
+
+.colors .photo{
+  box-sizing: border-box;
+  display: none;
+  width: 100%;
+}
+
+
+.colors > .input-none:checked + .color-radius[for="green"] > .photo{
+  border: 2px solid #33cc66;
+}
+
+.colors > .color-radius[for="pink"] > .photo{
+  border: 2px solid #f3305c;
+}
+
+.colors > .color-radius[for="purple"] > .photo{
+  border: 2px solid #685eb4;
+}
+
+.colors > .input-none:checked + .color-radius > .photo{
+  display: block;
+}
