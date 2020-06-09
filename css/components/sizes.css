@@ -1,0 +1,18 @@
+.sizes{
+  margin-top: 30px;
+}
+
+.sizes > legend{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 840px){
+  .sizes{
+    position: absolute;
+    left: 448px;
+    top: 330px;
+    margin-left: 12px;
+  }
+}

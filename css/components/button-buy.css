@@ -20,3 +20,16 @@
 .button-buy:active{
   transform: translateY(3px) scale(0.96);
 }
+
+
+@media (min-width: 840px){
+  .button-buy{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom:0px;
+    left: 448px;
+  }
+}
+

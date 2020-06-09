@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="css/generic/reset.css">
   <link rel="stylesheet" href="css/elements/base.css">
   <link rel="stylesheet" href="css/components/shopping-bag.css">
+  <link rel="stylesheet" href="css/components/sizes.css">
   <link rel="stylesheet" href="css/containers/main-header.css">
   <link rel="stylesheet" href="css/containers/product-mirror.css">
+  <link rel="stylesheet" href="css/containers/footer-mirror.css">
   <link rel="stylesheet" href="css/components/product-title.css">
   <link rel="stylesheet" href="css/components/color-radius.css">
   <link rel="stylesheet" href="css/components/button-buy.css">
@@ -54,13 +56,20 @@
           <img class="photo" src="/img/produtos/foto1-azul.png" alt="Foto produto azul">  
         </label>
       </fieldset>
+
+      <fieldset class="sizes">
+        <legend>Escolha o tamanho:</legend>
+        <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+      </fieldset>
+
       <button class="button-buy">Comprar</button>
+      
     </form>
   </section>
 
-  <footer>
+  <footer class="footer-mirror">
     <div class="container">
-      <img src="./img/logo-rodape.png" alt="Logo da Mirror Fashion">
+      <img class="logo" src="./img/logo-rodape.png" alt="Logo da Mirror Fashion">
       <ul class="social">
         <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
         <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>

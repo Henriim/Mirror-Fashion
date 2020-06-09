@@ -3,3 +3,17 @@
   font-weight: bold;
   line-height: 1.3;
 }
+
+@media (min-width: 450px ){
+  .product-title{
+    text-align: center;
+  }
+}
+
+@media (min-width: 840px){
+  .product-title{
+    position: absolute;
+    text-align: left;
+    left: 448px;
+  }
+}

@@ -13,6 +13,37 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
+
+  padding-bottom: 18px;
 }
 
 
+@media(min-width: 450px){
+  .product-mirror{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+@media (min-width:  840px){
+  .product-mirror{
+    position: relative;
+    display: block;
+    margin: 0 20px; 
+  }
+
+  .product-mirror > .price {
+    position: absolute;
+    left: 448px;
+    top: 80px;
+  }
+}
+
+@media (min-width: 1262px){
+  .product-mirror{
+    margin-left: auto;
+    margin-right: auto;  
+  }
+}
