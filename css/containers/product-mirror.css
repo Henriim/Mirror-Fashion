@@ -13,8 +13,45 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-
   padding-bottom: 18px;
+}
+
+.details {
+  padding: 2em 0 4em 0;
+}
+
+.details h2 {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.details p {
+  margin: 1em 0;
+  font-size: 1em;
+  line-height: 1.5;
+  max-width: 36em;
+}
+
+table {
+  border-spacing: 0.2em;
+  border-collapse: separate;
+}
+thead {
+  background-color: #999;
+}
+thead th {
+  font-weight: bold;
+  padding: 0.3em 1em;
+  text-align: center;
+}
+td {
+  padding: 0.3em;
+}
+tr:nth-child(2n) {
+  background-color: #CCC;
+}
+td:first-child {
+  font-style: italic;
 }
 
 
@@ -26,6 +63,12 @@
     
   }
 }
+
+@media (min-width: 500px) {
+  .details {
+    font-size: 1.2em;
+  }
+  }
 
 @media (min-width:  840px){
   .product-mirror{
